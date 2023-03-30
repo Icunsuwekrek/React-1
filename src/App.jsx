@@ -8,6 +8,7 @@ import Member from "./Pages/Member";
 import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
+import Cart from "./Pages/Cart";
 // import Borrow from "./pages/Borrow";
 // import History from "./pages/History";
 // import Register from "./pages/Register";
@@ -43,6 +44,8 @@ function App() {
           <Route path="Gallery" element={<Gallery />} />
           <Route path="Contact" element={<Contact/>}/>
           <Route path="/" element={<Home/>}/>
+          <Route path="Cart" element={<Cart/>}/>
+
           {/* <Route path="Borrow" element={<Borrow />} /> */}
           {/* <Route path="History" element={<History />} /> */}
           {/* <Route path="Register" element={<Register />} /> */}
