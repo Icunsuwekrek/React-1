@@ -21,10 +21,10 @@ class Daftar_buku extends Component {
     getbuku() {
         axios.get("http://localhost:8000/book")
             .then(response => {
-                // this.setState({
-                //     buku: response.data.buku
-                // })
-                // console.log(response)
+                this.setState({
+                    buku: response.data.data
+                })
+                console.log(response)
             })
             .catch(error => {
                 console.log(error);
@@ -175,6 +175,8 @@ class Daftar_buku extends Component {
                                     <th>Judul</th>
                                     <th>Penulis</th>
                                     <th>Penerbit</th>
+                                    <th>Kategori</th>
+                                    <th>Stock</th>
                                     <th>Harga</th>
                                     <th>Cover</th>
                                     <th>Aksi</th>
@@ -185,11 +187,12 @@ class Daftar_buku extends Component {
                                     return (
                                         <tr key={index}>
                                             <td>{item.isbn}</td>
-                                            <td>{item.judul}</td>
-                                            <td>{item.penulis}</td>
-                                            <td>{item.penerbit}</td>
-                                            <td>{item.harga}</td>
-                                            <td><img src={"http://localhost:8000/covers/" + item.cover} width="80" />{item.cover}</td>
+                                            <td>{item.title}</td>
+                                            <td>{item.author}</td>
+                                            <td>{item.publisher}</td>
+                                            <td>{item.category}</td>
+                                            <td>{item.stock}</td>
+                                            <td><img src={"http://localhost:8000/cover/" + item.cover} width="80" />{item.cover}</td>
                                             <td>
                                                 <button className="btn btn-sm btn-info m-1" data-toggle="modal"
                                                     data-target="#modal" onClick={() => this.Edit(item)}>
