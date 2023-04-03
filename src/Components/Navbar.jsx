@@ -6,7 +6,7 @@ class Navbar extends React.Component{
     render(){
         return(
 <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
-	<div className="container flex justify-between h-16 mx-auto">
+	<div className="flex justify-between h-16 mx-auto">
 		<div className="flex">
 			<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 w-24 h-18">
 				<img src="./image/book.png"/>
@@ -29,6 +29,9 @@ class Navbar extends React.Component{
 				</li> 
 				<li className="flex">
 					<a rel="noopener noreferrer" href="/Cart" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-lg text-sky-400">Cart</a>
+				</li> 
+				<li className="flex">
+					<a rel="noopener noreferrer" href="/Buku" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-lg text-sky-400">Buku</a>
 				</li> 
 			</ul>
 		</div>
