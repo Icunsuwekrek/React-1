@@ -177,7 +177,6 @@ class Daftar_buku extends Component {
                                     <th>Penerbit</th>
                                     <th>Kategori</th>
                                     <th>Stock</th>
-                                    <th>Harga</th>
                                     <th>Cover</th>
                                     <th>Aksi</th>
                                 </tr>
